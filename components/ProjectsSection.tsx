@@ -5,8 +5,20 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink } from 'lucide-react';
 import ProjectModal from './ProjectModal';
+interface Project {
+  title: string;
+  description: string;
+  longDescription: string;
+  problem: string;
+  solution: string;
+  impact: string;
+  image: string;
+  technologies: string[];
+  liveUrl: string;
+  githubUrl: string;
+}
 
-const projects = [
+const projects: Project[] = [
   {
     title: "Kenya-Real",
     description: "Next-gen real estate marketplace with verified agents, rich insights, and mobile-first design",
@@ -46,7 +58,7 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (

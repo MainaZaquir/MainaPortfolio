@@ -23,7 +23,7 @@ export default function RecruiterSidebar() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      action: () => window.open('https://linkedin.com/in/mainazaquir', '_blank'),
+      action: () => window.open('https://www.linkedin.com/in/zaquir-maina-200b73246/', '_blank'),
       color: "text-blue-600"
     },
     {
@@ -72,7 +72,7 @@ export default function RecruiterSidebar() {
                 transition={{ duration: 0.2 }}
                 className="text-xs font-bold"
               >
-                HIRE
+                HIRE ME
               </motion.div>
             )}
           </AnimatePresence>

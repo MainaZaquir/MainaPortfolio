@@ -10,7 +10,6 @@ export default function ThreeBackground() {
   useEffect(() => {
     if (!mountRef.current) return;
 
-    // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
@@ -19,7 +18,6 @@ export default function ThreeBackground() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     mountRef.current.appendChild(renderer.domElement);
 
-    // Create floating geometric shapes
     const geometries = [
       new THREE.BoxGeometry(1, 1, 1),
       new THREE.SphereGeometry(0.7, 32, 32),
@@ -50,7 +48,6 @@ export default function ThreeBackground() {
 
     const meshes: THREE.Mesh[] = [];
 
-    // Create multiple floating objects
     for (let i = 0; i < 15; i++) {
       const geometry = geometries[Math.floor(Math.random() * geometries.length)];
       const material = materials[Math.floor(Math.random() * materials.length)];
@@ -74,7 +71,6 @@ export default function ThreeBackground() {
 
     camera.position.z = 5;
 
-    // Animation loop
     const animate = () => {
       frameRef.current = requestAnimationFrame(animate);
 
@@ -89,7 +85,6 @@ export default function ThreeBackground() {
 
     animate();
 
-    // Handle resize
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
@@ -98,7 +93,6 @@ export default function ThreeBackground() {
 
     window.addEventListener('resize', handleResize);
 
-    // Cleanup
     return () => {
       window.removeEventListener('resize', handleResize);
       if (frameRef.current) {

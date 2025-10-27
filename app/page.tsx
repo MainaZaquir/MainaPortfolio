@@ -20,12 +20,10 @@ export default function Home() {
         <ToolboxSection />
         <TimelineSection />
         
-        {/* Fixed UI Elements */}
         <ThemeToggle />
         <RecruiterSidebar />
         <EasterEggs />
         
-        {/* Footer */}
         <footer className="py-12 px-4 border-t border-border bg-accent/5">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-muted-foreground mb-4">

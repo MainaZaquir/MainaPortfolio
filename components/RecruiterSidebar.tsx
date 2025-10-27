@@ -47,7 +47,6 @@ export default function RecruiterSidebar() {
         animate={{ x: 0 }}
         className="bg-background border border-border rounded-lg shadow-lg overflow-hidden"
       >
-        {/* Toggle Button */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="w-12 h-12 bg-primary text-primary-foreground flex items-center justify-center hover:bg-primary/90 transition-colors"
@@ -65,11 +64,13 @@ export default function RecruiterSidebar() {
               </motion.div>
             ) : (
               <motion.div
-                key="hire"
+                key="hire me"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
-                transition={{ duration: 0.2 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20, duration: 0.2 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="text-xs font-bold"
               >
                 HIRE ME
@@ -78,7 +79,6 @@ export default function RecruiterSidebar() {
           </AnimatePresence>
         </button>
 
-        {/* Expanded Content */}
         <AnimatePresence>
           {isExpanded && (
             <motion.div

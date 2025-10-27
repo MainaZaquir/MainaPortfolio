@@ -11,7 +11,6 @@ export default function EasterEggs() {
   const konamiCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
 
   useEffect(() => {
-    // Console message
     console.log(`
     🚀 Welcome to Maina's Portfolio!
     
@@ -26,7 +25,6 @@ export default function EasterEggs() {
     Built with ❤️ using Next.js, Three.js & Tailwind CSS
     `);
 
-    // Keyboard listeners
     const handleKeyPress = (e: KeyboardEvent) => {
       const newKonami = (konami + e.key).slice(-konamiCode.length);
       setKonami(newKonami);
@@ -37,11 +35,10 @@ export default function EasterEggs() {
       }
     };
 
-    // Developer mode
     let typed = '';
     const handleKeyDown = (e: KeyboardEvent) => {
       typed += e.key.toLowerCase();
-      typed = typed.slice(-9); // Keep last 9 characters
+      typed = typed.slice(-9); 
       
       if (typed === 'developer') {
         setShowConsoleMessage(true);
@@ -60,7 +57,6 @@ export default function EasterEggs() {
 
   return (
     <>
-      {/* Konami Code Secret */}
       <AnimatePresence>
         {showSecret && (
           <motion.div
@@ -78,7 +74,6 @@ export default function EasterEggs() {
         )}
       </AnimatePresence>
 
-      {/* Developer Mode Message */}
       <AnimatePresence>
         {showConsoleMessage && (
           <motion.div

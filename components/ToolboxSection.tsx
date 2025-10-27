@@ -132,7 +132,6 @@ export default function ToolboxSection() {
                 </div>
               </div>
 
-              {/* Hover tooltip */}
               {hoveredTech === tech.name && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}

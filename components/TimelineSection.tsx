@@ -45,7 +45,6 @@ export default function TimelineSection() {
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          {/* Timeline */}
           <div className="lg:col-span-2">
             <div className="relative">
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border"></div>
@@ -101,7 +100,6 @@ export default function TimelineSection() {
             </div>
           </div>
 
-          {/* Skills Chart */}
           <div className="lg:col-span-1">
             <motion.div
               initial={{ opacity: 0, x: 30 }}

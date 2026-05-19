@@ -11,7 +11,7 @@ export default function RecruiterSidebar() {
     {
       icon: Mail,
       label: "Email",
-      action: () => window.open('mailto:mzaquir58@gmail.com?subject=Job Opportunity&body=Hi Maina Zaquir, I\'d like to discuss a potential opportunity with you.'),
+      action: () => window.open('mailto:mzaquir58@gmail.com?subject=Job Opportunity&body=Hi Ahmed Maina Zakir, I\'d like to discuss a potential opportunity with you.'),
       color: "text-red-500"
     },
     {
@@ -23,13 +23,13 @@ export default function RecruiterSidebar() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      action: () => window.open('https://www.linkedin.com/in/zaquir-maina-200b73246/', '_blank'),
+      action: () => window.open('https://www.linkedin.com/in/maina-zaquir/', '_blank'),
       color: "text-blue-600"
     },
     {
       icon: FileText,
       label: "Resume",
-      action: () => window.open('./Resume/Zaquir Kambo CV.pdf', '_blank'),
+      action: () => window.open('./Resume/Maina Zaquir Kambo - Curriculum Vitae Software Developer.pdf', '_blank'),
       color: "text-green-600"
     },
     {

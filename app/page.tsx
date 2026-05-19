@@ -30,7 +30,7 @@ export default function Home() {
               Built with Next.js, Tailwind CSS, Three.js, and lots of ☕
             </p>
             <p className="text-sm text-muted-foreground">
-              © 2025 Maina Zaquir. All rights reserved.
+              © 2026 Ahmed Maina Zakir. All rights reserved.
             </p>
           </div>
         </footer>

@@ -6,6 +6,15 @@ import { Calendar, MapPin, Award } from 'lucide-react';
 
 const timelineData = [
   {
+    year: "2025 - Present",
+    title: "Full Stack Developer",
+    company: "AMZ Studio",
+    location: "Hybrid / Contract / Independent Delivery",
+    description: "Built backend services supporting user management, data processing, and secure system interactions. Owned the full development lifecycle from concept to deployment, ensuring functional and maintainable solutions. Structured applications to support scalability, reliability, and clean separation of concerns",
+    skills: ["Structured Problem Solving", "Analytical Thinking", "Ownership & Accountability"],
+    achievement: "Strengthened backend implementation quality, moving beyond UI-focused builds to structured system design"
+  },
+  {
     year: "2024",
     title: "SQL Data Analyst",
     company: "Collection Africa Limited",
@@ -136,7 +145,7 @@ export default function TimelineSection() {
               <div className="mt-8 p-4 bg-accent/20 rounded-lg">
                 <h4 className="font-semibold mb-2">Career Highlights</h4>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• 3+ years in tech</li>
+                  <li>• 4.5+ years in tech</li>
                   <li>• 10+ projects delivered</li>
                   <li>• 99.9% uptime achieved</li>
                 </ul>

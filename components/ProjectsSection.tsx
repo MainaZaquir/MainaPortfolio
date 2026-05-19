@@ -91,7 +91,7 @@ export default function ProjectsSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of my recent work — from concept to deployment.
+            A showcase of my recent work, built with passion and dedication.
           </p>
         </motion.div>
 

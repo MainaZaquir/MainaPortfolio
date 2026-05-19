@@ -20,7 +20,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 bg-clip-text text-transparent">
-            Maina Zaquir
+            Ahmed Maina Zakir
           </h1>
           
           <motion.h2
@@ -29,7 +29,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            Full Stack Developer
+            Full Stack Developer & Co-founder of AMZ Studio
           </motion.h2>
           
           <motion.p
